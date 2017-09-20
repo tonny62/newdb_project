@@ -1,0 +1,43 @@
+#wrapper{
+  background-color: #ffe3dd;
+  width: 60%;
+  margin: auto;
+  padding: 2em;
+}
+
+#form{
+  margin: auto;
+  background-color: #ffe3dd;
+  text-align: center;
+  padding: 1em;
+}
+
+#logo{
+  margin: auto;
+  margin-bottom: 25px;
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.center{
+  margin: auto;
+
+}
+
+body{
+  background-color: #ff7757;
+  font-family: sans-serif;
+}
+
+#wrapper2{
+  margin-top: 50px;
+  margin-left: auto;
+  width: 80%;
+}
+
+#lostpass{
+  font-size: 14px;
+  font-weight: lighter;
+  color: #ffffff;
+}

@@ -36,8 +36,20 @@ body{
   width: 80%;
 }
 
-#lostpass{
+.downtext{
   font-size: 14px;
   font-weight: lighter;
   color: #ffffff;
+}
+
+a:visited{
+  text-decoration: none;
+  color: #fff;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+#back{
+  color: #000;
 }

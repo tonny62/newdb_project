@@ -83,6 +83,7 @@ li:hover{
   min-height: 500px;
   margin: 5px auto;
   z-index: 3;
+  padding: 100px 0 0 0;
 }
 .clear{
   clear: both;
@@ -99,9 +100,28 @@ table{
 }
 #table_wrapper{
   font-variant: normal;
-  position: absolute;
   width: 100%;
-  z-index: 4;
   margin-top: 50px;
-
+  margin-bottom: 50px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th {
+padding: 15px;
+margin-top: 50px;
+}
+#timetable{
+  width: 70%;
+  padding: 100px 0px 0px 0px;
+  border: 1px solid #f00;
+}
+#timetable_wrapper{
+  padding-top: 100px;
+}
+#account_table_container{
+  width: 50%;
+}
+#addhomework{
+  padding: 0 0 0 100px;;
 }

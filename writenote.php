@@ -14,23 +14,22 @@
   </div>
   <div id="menu">
     <ul>
-      <li><a href="dashboard.php" id="menu_text">Back</a></li>
-      <li><a href="writenote.php" id="menu_text">Write New Note</a></li>
+      <li><a href="notes.php" id="menu_text">Back</a></li>
     </ul>
   </div>
   <div class="clear"></div>
   <div id="container">
-    <form action="readnote.php">
+    <form id="noteform" action="readnote.php">
       <table>
         <tr>
-          <td>No</td>
           <td>Topic</td>
-          <td>Read</td>
+          <td><input type="text" name="topic"></td>
         </tr>
         <tr>
-          <td>1</td>
-          <td>Something about miniproject</td>
-          <td><input type="submit" value="read"></td>
+          <td colspan="2"><textarea name="field" rows="8" cols="80"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="Save Note!"></td>
         </tr>
       </table>
     </form>

@@ -7,8 +7,10 @@ if ($mysqli->connect_errno) {
       $q = "INSERT INTO `homework` (`homework_id`, `homework_name`, `homework_subject`, `homework_deadline`, `homework_status`) VALUES (NULL, '".$_POST['name']."', '".$_POST['subject']."', '".$_POST['deadline']."', '');";
       $result = $mysqli->query($q);
       if (!$result) {
+        $status = "error";
         echo "error querying";
       }else{
+        $status = "ok";
         echo "ok";
       }
     }
@@ -49,21 +51,24 @@ if ($mysqli->connect_errno) {
           </tr>
 
         <?php
-        while($row = $result->fetch_array()){
-          echo "
-              <tr>
-                <td>".$row['homework_id']."</td>
-                <td>".$row['homework_name']."</td>
-                <td>".$row['homework_subject']."</td>
-                <td>".$row['homework_deadline']."</td>
-                <td><input type='checkbox'";
-          if ($row['homework_status']!="done") {
-              echo ">";
-          } else {
-              echo "CHECKED>";
-          }
-          echo "</tr>";
-    }
+        if($status = "ok"){
+          while($row = $result->fetch_array()){
+            echo "
+                <tr>
+                  <td>".$row['homework_id']."</td>
+                  <td>".$row['homework_name']."</td>
+                  <td>".$row['homework_subject']."</td>
+                  <td>".$row['homework_deadline']."</td>
+                  <td><input type='checkbox'";
+            if ($row['homework_status']!="done") {
+                echo ">";
+            } else {
+                echo "CHECKED>";
+            }
+            echo "</tr>";
+      }
+        }
+
              ?>
         </table>
       </div>

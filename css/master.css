@@ -94,15 +94,20 @@ table,th,td{
   border: 1px solid black;
   text-align: center;
   border-collapse: collapse;
+
+
 }
 table{
   width:90%;
+
+
 }
 #table_wrapper{
   font-variant: normal;
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
+
 }
 table, th, td {
     border: 1px solid black;
@@ -115,6 +120,7 @@ margin-top: 50px;
   width: 70%;
   padding: 100px 0px 0px 0px;
   border: 1px solid #f00;
+
 }
 #timetable_wrapper{
   padding-top: 100px;
@@ -123,5 +129,42 @@ margin-top: 50px;
   width: 50%;
 }
 #addhomework{
-  padding: 0 0 0 100px;;
+  padding: 0 0 0 100px;
+}
+#table-orange{
+    background-color: #ff8266;
+}
+#tab-gray{
+  background-color: #ffc1b3;
+}
+#tab-white{
+  background-color: #ffffff;
+}
+#tb{
+  background-color: #ffa29e;
+}
+#tb1{
+  background-color: #ff6a66;
+}
+#tb2{
+  background-color: #ff9c99;
+}
+#tb3{
+  background-color: #ffe6e6;
+}
+#page{
+  width: 100px;
+  background-color: red;
+}
+
+.center {
+    margin: center;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+#acc{
+  width: 70%;
+  padding: 100px 0px 0px 0px;
+  border: 1px solid #f00;
 }

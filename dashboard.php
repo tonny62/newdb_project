@@ -28,10 +28,10 @@
         <table id="table">
           <tr>
             <!-- TODO: add logo for different functions -->
-            <td><a href="homework.php"><img src="pics/homework_icon.png" alt=""></a></td>
+            <td><a href="homework.php"><img src="pics/homework_icon.png" style="width:160px;height:160px" alt=""></a></td>
             <!-- <td><a href="projects.php"><img src="pics/homework_icon.png" alt=""></a></td> -->
-            <td><a href="timetable.php"><img src="pics/homework_icon.png" alt=""></a></td>
-            <td><a href="notes.php"><img src="pics/homework_icon.png" alt=""></a></td>
+            <td><a href="timetable.php"><img src="pics/timetable.png" style="width:160px;height:160px" alt=""></a></td>
+            <td><a href="notes.php"><img class="img-circle" src="pics/nn.gif" style="width:160px;height:160px" alt=""></a></td>
           </tr>
           <tr>
             <td>Homeworks</td>

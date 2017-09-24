@@ -47,7 +47,7 @@
   </div>
   <div id="wrapper2">
     <span class="downtext">
-          <p>Lost your password?</p>
+          <p>Forget password?</p>
       </span>
     <span class="downtext">
         <a href="createaccount.php"><p>Create Account</p></a>

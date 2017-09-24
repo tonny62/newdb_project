@@ -43,33 +43,50 @@ if ($mysqli->connect_errno) {
       <div id="table_wrapper">
         <table class="timetable">
           <tr>
-            <th>no.</th>
-            <th>Name</th>
-            <th>Subject</th>
-            <th>Deadline</th>
-            <th>Status</th>
+            <th id="table-orange">no.</th>
+            <th id="table-orange">Name</th>
+            <th id="table-orange">Subject</th>
+            <th id="table-orange">Deadline</th>
+            <th id="table-orange">Status</th>
           </tr>
 
-        <?php
-        if($status = "ok"){
-          while($row = $result->fetch_array()){
+          <?php
+
+        while($row = $result->fetch_array()){
+
+          if ($row['homework_id']%2 != 0){
             echo "
-                <tr>
+                <tr id='tab-gray'>
                   <td>".$row['homework_id']."</td>
                   <td>".$row['homework_name']."</td>
                   <td>".$row['homework_subject']."</td>
                   <td>".$row['homework_deadline']."</td>
                   <td><input type='checkbox'";
-            if ($row['homework_status']!="done") {
-                echo ">";
-            } else {
-                echo "CHECKED>";
-            }
-            echo "</tr>";
-      }
-        }
+                  if ($row['homework_status']!="done") {
+                    echo ">";
+                  } else {
+                    echo "CHECKED>";
+                  }
+                  echo "</tr>";
+          }else{
+            echo "
+                <tr id='tab-white'>
+                  <td>".$row['homework_id']."</td>
+                  <td>".$row['homework_name']."</td>
+                  <td>".$row['homework_subject']."</td>
+                  <td>".$row['homework_deadline']."</td>
+                  <td><input type='checkbox'";
+                  if ($row['homework_status']!="done") {
+                    echo ">";
+                  } else {
+                    echo "CHECKED>";
+                  }
+                  echo "</tr>";
+          }
 
+    }
              ?>
+
         </table>
       </div>
       <hr>
@@ -78,13 +95,12 @@ if ($mysqli->connect_errno) {
         <form action="homework.php" method="post">
           <table>
             <tr>
-              <td>Name :
-              </td>
-              <td><input type="text" name="name"></td>
+              <td id="tb1"><b>Name :</b></td>
+              <td id="tb1"><input type="text" name="name"></td>
             </tr>
             <tr>
-              <td>Subject :</td>
-              <td>
+              <td id="tb2"> <b>Subject :</b></td>
+              <td id="tb2">
                 <select name="subject">
                   <option value="its351">its351</option>
                   <option value="css226">css226</option>
@@ -93,12 +109,12 @@ if ($mysqli->connect_errno) {
               </td>
             </tr>
             <tr>
-              <td>Deadline :</td>
-              <td><input type="date" name="deadline" value="">
-                <br><br></td>
+              <td id="tb1"><b>Deadline :</b></td>
+              <td id="tb1"><input type="date" name="deadline" value="">
+                <br></td>
             </tr>
             <tr>
-              <td colspan="2"><input type="submit" value="ADD HOMEWORK"></td>
+              <td id="tb2" colspan="2"><input type="submit" value="ADD HOMEWORK"></td>
             </tr>
           </table>
 

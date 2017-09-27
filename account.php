@@ -1,10 +1,10 @@
 <?php
-$mysqli = new mysqli('localhost','root','root','labdb');
+$mysqli = new mysqli('localhost','root','root','miniproject');
 if($mysqli->connect_errno){
-  echo "error in connection";
+  //echo "error in connection";
 }else{
   //no error
-  echo "connection success";
+  //echo "connection success";
 }
  ?>
 <html>
@@ -62,7 +62,7 @@ if($mysqli->connect_errno){
         </tr>
 
         <tr>
-          <td id="tb2" colspan="2"><input type="submit" value="BACK"></td>
+          <td id="tb2" colspan="2"><a href="dashboard.php"><input type="submit" value="BACK"></a></td>
         </tr>
       </table>
     </div>

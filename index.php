@@ -13,7 +13,7 @@
       <img src="pics/icon.jpg" id="logo">
     </div>
     <div id="form">
-      <form action="action_page.php">
+      <form action="action_page.php" method="post">
         <table class="center">
           <tr>
             <td colspan="2">
@@ -22,6 +22,10 @@
                   $status = $_GET['status'];
                   if ($status == 'failed') {
                       echo "<p>Invalid ID or Password</p>";
+                  }elseif ($status == 'notcomplete') {
+                    echo "<p>Please enter ID and PASSWORD</p>";
+                  }elseif ($status == 'incorrect') {
+                    echo "<p>Incorrect ID or Password</p>";
                   }
               } else {
               }
@@ -47,7 +51,7 @@
   </div>
   <div id="wrapper2">
     <span class="downtext">
-          <p>Forget password?</p>
+          <!-- <p>Forget password?</p> -->
       </span>
     <span class="downtext">
         <a href="createaccount.php"><p>Create Account</p></a>

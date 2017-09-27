@@ -8,10 +8,10 @@ if ($mysqli->connect_errno) {
       $result = $mysqli->query($q);
       if (!$result) {
         $status = "error";
-        echo "error querying";
+        //echo "error querying";
       }else{
         $status = "ok";
-        echo "ok";
+        //echo "ok";
       }
     }
     $q = "SELECT * FROM homework;";

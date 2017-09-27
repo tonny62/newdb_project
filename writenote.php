@@ -19,7 +19,7 @@
   </div>
   <div class="clear"></div>
   <div id="container">
-    <form id="noteform" action="readnote.php">
+    <form id="noteform" action="action_note.php" method="post">
       <table>
         <tr>
           <td>Topic</td>
@@ -29,7 +29,7 @@
           <td colspan="2"><textarea name="field" rows="8" cols="80"></textarea></td>
         </tr>
         <tr>
-          <td colspan="2"><input type="submit" value="Save Note!"></td>
+          <td colspan="2"><a href="dashboard.php"><input type="button" value="Save Note!"></a></td>
         </tr>
       </table>
     </form>
